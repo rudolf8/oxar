@@ -43,7 +43,8 @@ fi
 #APEX REST install
 cd $OOS_SOURCE_DIR/tmp
 #Setup restful services
-if [[ ${OOS_APEX_ZIP_FILENAME,,} == "apex_18.2"* ]]
+if [[ ${OOS_APEX_ZIP_FILENAME,,} == "apex_18.2"*
+  || ${OOS_APEX_ZIP_FILENAME,,} == "apex_19.1"* ]]
 then
   echo "@apex_rest_config_core.sql @ $OOS_APEX_LISTENERUN_PWD $OOS_APEX_REST_PUB_USR_PWD" > run.sql
 else  
