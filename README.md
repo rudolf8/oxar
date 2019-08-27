@@ -71,8 +71,8 @@ else
   apt-get install git-core
 fi
 
-git clone https://github.com/nl2019/apex.git
-cd oxar
+git clone https://github.com/nl2019/autopex.git
+cd autopex
 ```
 
 ### Vagrant
