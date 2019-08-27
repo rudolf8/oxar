@@ -52,7 +52,7 @@ Prebuilt Images | Due to licensing issues, we can not provide a prebuilt image o
 You can build your own VM with the following instructions.
 
 ## Download
-### Native Build
+### AUTO Native Build :boat:
 
 ```bash
 #Ensure user is currently root
