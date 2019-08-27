@@ -53,7 +53,7 @@ You can build your own VM with the following instructions.
 
 ## Download
 ### AUTO Native Build :boat:
-* * After copying files to the autofiles directory: _ _
+** After copying files to the autofiles directory: __
 
 ```bash
 yum install git -y
