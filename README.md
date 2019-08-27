@@ -71,7 +71,7 @@ else
   apt-get install git-core
 fi
 
-git clone https://github.com/nl2019/OXAR.git
+git clone https://github.com/nl2019/apex.git
 cd oxar
 ```
 
@@ -79,7 +79,7 @@ cd oxar
 Run the following on your host machine *(you will need `git` installed on your host machine)*:
 
 ```bash
-git clone https://github.com/OraOpenSource/oxar.git
+git clone https://github.com/nl2019/apex.git
 cd oxar
 ```
 
