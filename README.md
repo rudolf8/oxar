@@ -73,6 +73,8 @@ fi
 
 git clone https://github.com/nl2019/autopex.git
 cd autopex
+. build.sh
+cd
 ```
 
 ### Vagrant
