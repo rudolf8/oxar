@@ -15,7 +15,7 @@ App              | Version                 | Description
 ------           | ------                  | ------
 Oracle XE        | 18.4.0.0.0              |
 SQLcl            | 4.2.0                   | Command line SQL
-APEX             | 19.1                    | Currently supports APEX 18.x, 5.x and APEX 4.x releases. Just reference the appropriate file in `config.properties`
+APEX             | 19.1                    | Currently supports APEX 19.X, 18.x, 5.x and APEX 4.x releases. Just reference the appropriate file in `config.properties`
 ORDS             | 19.2                  |
 Tomcat           | 7.0.57                  |
 Node JS          | 8.x                     |
