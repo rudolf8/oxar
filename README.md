@@ -58,7 +58,7 @@ You can build your own VM with the following instructions.
 ```bash
 yum install git -y
 git clone https://github.com/nl2019/autopex.git
-. autopex/install.sh
+. /autopex/install.sh
 echo""
 ```
 
