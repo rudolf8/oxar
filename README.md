@@ -59,6 +59,7 @@ You can build your own VM with the following instructions.
 yum install git -y
 git clone https://github.com/nl2019/autopex.git
 . autopex/install.sh
+echo""
 ```
 
 ### Vagrant
