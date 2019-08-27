@@ -53,12 +53,12 @@ You can build your own VM with the following instructions.
 
 ## Download
 ### AUTO Native Build :boat:
+* * After copying files to the autofiles directory: _ _
 
 ```bash
 yum install git -y
 git clone https://github.com/nl2019/autopex.git
-
-. install.sh
+. autopex/install.sh
 ```
 
 ### Vagrant
