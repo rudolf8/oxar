@@ -1,7 +1,7 @@
 ***This document is best viewed in [flatdoc format](http://oraopensource.github.io/flatdoc?repo=oxar&path=README.md)***
 <a name="constants"></a>
 
-# AUTO Installer for APEX 19.2 and ORDS 19.2 
+# AUTO Installer for APEX 20.2 and ORDS 19.2 
 The goal of the OXAR (pronounced "Oscar") project is to make it easy for developers to quickly build and/or launch a fully functional instance of Oracle XE and APEX. The scripts provided in this project handle the automatic build.
 
 *Note: Currently this build lacks a backup script. It is recommended to do your own backup*
@@ -15,7 +15,7 @@ App              | Version                 | Description
 ------           | ------                  | ------
 Oracle XE        | 18.4.0.0.0              |
 SQLcl            | 4.2.0                   | Command line SQL
-APEX             | 19.2                    | Currently supports APEX 19.X, 18.x, 5.x and APEX 4.x releases. Just reference the appropriate file in `config.properties`
+APEX             | 20.2                    | Currently supports APEX 20.x, 19.X, 18.x, 5.x and APEX 4.x releases. Just reference the appropriate file in `config.properties`
 ORDS             | 19.2                  |
 Tomcat           | 7.0.57                  |
 Node JS          | 8.x                     |
