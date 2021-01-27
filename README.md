@@ -56,7 +56,7 @@ You can build your own VM with the following instructions.
 
 ```bash
 yum install git -y
-git clone https://github.com/nl2019/autopex.git
+git clone https://github.com/rudolf8/autopex.git
 . autopex/install.sh
 echo''
 ```
@@ -65,7 +65,7 @@ echo''
 Run the following on your host machine *(you will need `git` installed on your host machine)*:
 
 ```bash
-git clone https://github.com/nl2019/apex.git
+git clone https://github.com/rudolf8/apex.git
 cd oxar
 ```
 
