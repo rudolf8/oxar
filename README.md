@@ -15,11 +15,10 @@ App              | Version                 | Description
 ------           | ------                  | ------
 Oracle XE        | 18.4.0.0.0              |
 SQLcl            | 4.2.0                   | Command line SQL
-APEX             | 20.2                    | Currently supports APEX 20.x, 19.X, 18.x, 5.x and APEX 4.x releases. Just reference the appropriate file in `config.properties`
-ORDS             | 19.2                  |
+APEX             | 20.2                    | Currently supports APEX 20.x, 19.x, 18.x, 5.x and APEX 4.x releases. Just reference the appropriate file in `config.properties`
+ORDS             | 20.4.1                  |
 Tomcat           | 7.0.57                  |
 Node JS          | 8.x                     |
-APEX Office Print| 3.0                     | Currently only supports 5.x. Disable the option to install this add-on if you are installing versions earlier or later than 5.x
 
 ## Node.js Tools
 App              | Version                 | Description
@@ -163,12 +162,10 @@ OXAR now supports 3rd party add-ons to be included into OXAR. Current list of ad
 
 Name | Description
 --- | ---
-[APEX Office Print](addons/aop) | Flexible print server for Oracle Application Express (APEX) to generate your Office and PDF-documents in no time and effort - we make printing easy.
 
 # Securing the Server
 
 If you use OXAR in a production instance or is available on the internet it is recommended that you lock down certain features. Review our [Securing System](docs/securing_system.md) document.
-
 
 # How to connect
 
