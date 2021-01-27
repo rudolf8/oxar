@@ -17,7 +17,7 @@ Oracle XE        | 18.4.0.0.0              | Oracle Database Express Edition (fr
 SQLcl            | 4.2.0                   | Command line SQL
 APEX             | 20.2                    | Currently supports APEX 20.x, 19.x, 18.x, 5.x and APEX 4.x releases. Just reference the appropriate file in `config.properties`
 ORDS             | 20.4.1                  | Oracle REST Data Services
-Tomcat           | 7.0.57                  |
+Tomcat           | 8.5                 |
 Node JS          | 8.x                     |
 
 ## Node.js Tools
