@@ -113,7 +113,7 @@ To assist getting your Oracle installation files configured for OXAR one approac
 Instead of having to use `vi` to edit the file you can use `sed` to find and replace. An example is as follows: *(Note: the escaping of forward slashes (`/`) in the URL)*
 ```bash
 sed -i 's/OOS_ORACLE_FILE_URL=CHANGEME/OOS_ORACLE_FILE_URL=https:\/\/www.dropbox.com\/s\/SHAREDLINKCODE\/oracle-database-xe-18c-1.0-1.x86_64.rpm?dl=1/g' config.properties
-sed -i 's/OOS_APEX_FILE_URL=CHANGEME/OOS_APEX_FILE_URL=https:\/\/www.dropbox.com\/s\/SHAREDLINKCODE\/apex20.2.zip?dl=1/g' config.properties
+sed -i 's/OOS_APEX_FILE_URL=CHANGEME/OOS_APEX_FILE_URL=https:\/\/www.dropbox.com\/s\/SHAREDLINKCODE\/apex_20.2.zip?dl=1/g' config.properties
 sed -i 's/OOS_ORDS_FILE_URL=CHANGEME/OOS_ORDS_FILE_URL=https:\/\/www.dropbox.com\/s\/SHAREDLINKCODE\/ords-20.4.1.013.1644.zip?dl=1/g' config.properties
 sed -i 's/OOS_SQLCL_FILE_URL=/OOS_SQLCL_FILE_URL=https:\/\/www.dropbox.com\/s\/SHAREDLINKCODE\/sqlcl-4.2.0.16.049.0843-no-jre.zip?dl=1/g' config.properties
 ```
