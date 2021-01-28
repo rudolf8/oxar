@@ -1,7 +1,7 @@
 ***This document is best viewed in [flatdoc format](http://oraopensource.github.io/flatdoc?repo=oxar&path=README.md)***
 <a name="constants"></a>
 
-# AUTO Installer for APEX 20.2 and ORDS 20.4
+# AUTO Installer for APEX 20.2 and ORDS 20.4.1
 The goal of the OXAR (pronounced "Oscar") project is to make it easy for developers to quickly build and/or launch a fully functional instance of Oracle XE and APEX. The scripts provided in this project handle the automatic build.
 
 *Note: Currently this build lacks a backup script. It is recommended to do your own backup*
