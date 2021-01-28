@@ -19,11 +19,17 @@ if [ -n "$(command -v yum)" ]; then
 
 elif [ -n "$(command -v apt-get)" ]; then
 
-    apt-get install tomcat7 tomcat7-admin -y
+    #apt-get install tomcat7 tomcat7-admin -y
+    apt-get install tomcat8 tomcat8-admin -y
+    
     # Set tomcat environmental variables such as CATALINA_HOME
-    CATALINA_HOME=/var/lib/tomcat7
-    TOMCAT_SERVICE_NAME=tomcat7
-    TOMCAT_USER=tomcat7
+    #CATALINA_HOME=/var/lib/tomcat7
+    #TOMCAT_SERVICE_NAME=tomcat7
+    #TOMCAT_USER=tomcat7
+    
+    CATALINA_HOME=/var/lib/tomcat8
+    TOMCAT_SERVICE_NAME=tomcat8
+    TOMCAT_USER=tomcat8
     
     #Modifications to the tomcat7 init script. For consistency, naming the same
     #as Red Hat counter part (it uses a service file rather than init script).
@@ -33,8 +39,11 @@ elif [ -n "$(command -v apt-get)" ]; then
     #https://wiki.debian.org/LSBInitScripts
     #See also https://refspecs.linuxbase.org/LSB_3.0.0/LSB-PDA/LSB-PDA/facilname.html
     sed -i 's/# Should-Start:      \$named/# Should-Start:      \$named oracle-xe/' /etc/init.d/${TOMCAT_OXAR_SERVICE_NAME}
+    
     #Also replace the script executable path
-    sed -i 's/\/etc\/init\.d\/tomcat7/\/etc\/init.d\/tomcat@oxar/' /etc/init.d/${TOMCAT_OXAR_SERVICE_NAME}
+    #sed -i 's/\/etc\/init\.d\/tomcat7/\/etc\/init.d\/tomcat@oxar/' /etc/init.d/${TOMCAT_OXAR_SERVICE_NAME}
+    sed -i 's/\/etc\/init\.d\/tomcat8/\/etc\/init.d\/tomcat@oxar/' /etc/init.d/${TOMCAT_OXAR_SERVICE_NAME}
+    
     #and the provides name to match script name
     sed -i 's/Provides:          tomcat7/Provides:          tomcat@oxar/' /etc/init.d/${TOMCAT_OXAR_SERVICE_NAME}
     
