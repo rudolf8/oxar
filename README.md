@@ -86,7 +86,7 @@ vi config.properties
 Parameter | Description
 ------ | ------
 `OOS_ORACLE_FILE_URL` | [Download](http://www.oracle.com/technetwork/database/database-technologies/express-edition/overview/index.html)
-`OOS_APEX_FILE_URL` | [Download](http://download.oracleapex.com)
+`OOS_APEX_FILE_URL` | [Download](https://www.oracle.com/tools/downloads/apex-downloads.html)
 `OOS_ORDS_FILE_URL` | [Download](http://www.oracle.com/technetwork/developer-tools/rest-data-services/overview/index.html)
 `OOS_SQLCL_FILE_URL` | [Download](http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html) *This is an optional file*
 
