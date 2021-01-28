@@ -15,7 +15,13 @@ if [ -n "$(command -v yum)" ]; then
   firewalld \
   which \
   net-tools \
+  ncdu \
+  mc \
+  fail2ban \
+  wget \
+  nano \
   htop \
+  unzip \
   sudo \
   rlwrap \
   certbot -y
