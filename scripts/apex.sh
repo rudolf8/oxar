@@ -26,7 +26,7 @@ then
   sqlplus -L sys/$OOS_ORACLE_PWD@localhost:$OOS_ORACLE_TNS_PORT/xepdb1 as sysdba @../run.sql
 
 else
-  echo "APEX 5.x/18.x Install. Using new change password method";
+  echo "APEX 5.x/18.x/20.x Install. Using new change password method";
 
   #Need to remove the "HIDE" from the accept statement or else the << EOF1 doesn't work
   cd apex
@@ -45,7 +45,9 @@ cd $OOS_SOURCE_DIR/tmp
 #Setup restful services
 if [[ ${OOS_APEX_ZIP_FILENAME,,} == "apex_18.2"*
   || ${OOS_APEX_ZIP_FILENAME,,} == "apex_19.1"*
-  || ${OOS_APEX_ZIP_FILENAME,,} == "apex_19.2"* ]]
+  || ${OOS_APEX_ZIP_FILENAME,,} == "apex_19.2"*
+  || ${OOS_APEX_ZIP_FILENAME,,} == "apex_20.1"*
+  || ${OOS_APEX_ZIP_FILENAME,,} == "apex_20.2"* ]]
 then
   echo "@apex_rest_config_core.sql @ $OOS_APEX_LISTENERUN_PWD $OOS_APEX_REST_PUB_USR_PWD" > run.sql
 else  
