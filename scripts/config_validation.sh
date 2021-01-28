@@ -80,7 +80,10 @@ if [ "$OOS_MODULE_ORDS" = "Y" ]; then
         && [[ ! "${ORDS_MAJOR}.${ORDS_MINOR}.${ORDS_REVISION}" == "18.3.0" ]] \
         && [[ ! "${ORDS_MAJOR}.${ORDS_MINOR}.${ORDS_REVISION}" == "19.1.0" ]] \
         && [[ ! "${ORDS_MAJOR}.${ORDS_MINOR}.${ORDS_REVISION}" == "19.2.0" ]] \
-        && [[ ! "${ORDS_MAJOR}.${ORDS_MINOR}.${ORDS_REVISION}" == "19.4.0" ]]; then
+        && [[ ! "${ORDS_MAJOR}.${ORDS_MINOR}.${ORDS_REVISION}" == "19.4.0" ]] \
+        && [[ ! "${ORDS_MAJOR}.${ORDS_MINOR}.${ORDS_REVISION}" == "20.2.0" ]] \
+        && [[ ! "${ORDS_MAJOR}.${ORDS_MINOR}.${ORDS_REVISION}" == "20.3.0" ]] \
+        && [[ ! "${ORDS_MAJOR}.${ORDS_MINOR}.${ORDS_REVISION}" == "20.4.0" ]]; then
         echo "This version of ORDS is not yet supported in OXAR" >&2
         echo "Please report this at http://github.com/OraOpenSource/oxar/issues" >&2
         exit 1
