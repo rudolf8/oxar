@@ -2,17 +2,17 @@
 
 Software that is installed apart of this package:
 
-* Oracle XE 11g
-* Application Express 5.0
+* Oracle XE 18c
+* Application Express 20.2
 * Oracle REST Data Services
-* Tomcat 7.0
+* Tomcat 9.0
 * Node.js
 * node4ords
 * ratom
 * rlwrap
 * Bower
 
-## Oracle XE 11g
+## Oracle XE 18c
 
 Oracle is installed into the folder: `/opt/oracle/product/18c/dbhomeXE`. This is most conveniently navigated to with the `$ORACLE_HOME` environment variable. This is set up when ever you log into the terminal via the profile: `/etc/profile.d/20oos_oraclexe.sh`.
 
@@ -26,7 +26,7 @@ ORDS is installed into $ORACLE_HOME, under the folder ords. The files located in
 
 The configuration folder is located at: `/etc/ords/`.
 
-## Tomcat 7
+## Tomcat 9
 
 The Tomcat installation is maintained by the sytems' package manager, but you should be able to find all tomcat related files under `/usr/share/tomcat`. The actual ords.war file is found under the webapps directory (alternatively found under $ORACLE_HOME/ords).
 
