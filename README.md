@@ -65,7 +65,7 @@ echo''
 Run the following on your host machine *(you will need `git` installed on your host machine)*:
 
 ```bash
-git clone https://github.com/rudolf8/apex.git
+git clone https://github.com/rudolf8/oxar.git
 cd oxar
 ```
 
