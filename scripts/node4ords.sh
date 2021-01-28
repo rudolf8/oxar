@@ -19,7 +19,7 @@ cd certs
 openssl req \
   -newkey rsa:2048 -nodes -keyout localhost.key \
   -x509 -days 365 -out localhost.crt \
-  -subj "/C=CA/ST=Alberta/L=Calgary/O=Dis/CN=localhost"
+  -subj "/C=DE/ST=Bavaria/L=Munich/O=Dis/CN=localhost"
 
 # Modify Node4ORDS Config
 cd /opt/node4ords
