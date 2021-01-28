@@ -71,7 +71,8 @@ if [ "$OOS_MODULE_NODEJS" = "Y" ]; then
     #175 Get nodejs from nodesource to get latest version
     # curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
     # curl --silent --location https://rpm.nodesource.com/setup_7.x | bash -
-    curl --silent --location https://rpm.nodesource.com/setup_8.x | bash -
+    # curl --silent --location https://rpm.nodesource.com/setup_8.x | bash -
+    curl --silent --location https://rpm.nodesource.com/setup_9.x | bash -
     yum install -y nodejs
     # "To compile and install native addons from npm you may also need to install build tools:" (https://nodejs.org/en/download/package-manager/#enterprise-linux-and-fedora)
     yum install -y gcc-c++ make
