@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-# disable SELinux
+# disable SELinux, to disable it permanently change /etc/selinux/config
 setenforce Permissive
 
 #*** SWAP SPACE ***
