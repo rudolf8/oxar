@@ -1,5 +1,9 @@
 #!/bin/bash
 
+
+# disable SELinux
+setenforce Permissive
+
 #*** SWAP SPACE ***
 #http://www.cyberciti.biz/faq/linux-add-a-swap-file-howto/
 dd if=/dev/zero of=/swapfile1 bs=1024 count=2099200
