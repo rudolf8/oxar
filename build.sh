@@ -131,7 +131,7 @@ fi
 #Oracle install
 if [ "$OOS_MODULE_ORACLE" = "Y" ]; then
   #Expand swap
-  . ${OOS_UTILS_DIR}/echo_title.sh "Expanding Swap Space"
+  . ${OOS_UTILS_DIR}/echo_title.sh "Disabling SELinux & Expanding Swap Space"
   cd $OOS_SOURCE_DIR
   eval "source ./scripts/swap_space.sh $OOS_LOG_OPTIONS"
 
