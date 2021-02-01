@@ -68,6 +68,8 @@ Run the following on your host machine *(you will need `git` installed on your h
 git clone https://github.com/rudolf8/oxar.git
 cd oxar
 ```
+## Prerequisites
+To complete the database installation successfully, the /etc/hosts file must contain a line containing the server IP and hostname.
 
 ## Configure
 Regardless of whether you're doing a native or Vagrant based build, you will need to modify the `config.properties` file prior to running the installation script. At a minimum, you will need to replace the CHANGME tokens to point to the appropriate files. Read below for help on modifying this file. *If doing a Vagrant install, you can modify `config.properties` using your local text editor.*
