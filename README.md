@@ -69,7 +69,7 @@ git clone https://github.com/rudolf8/oxar.git
 cd oxar
 ```
 ## Prerequisites
-To complete the database installation successfully, the /etc/hosts file must contain a line containing the server IP and hostname.
+To complete the database installation successfully, the "/etc/hosts" file must contain a fully qualified name for the server.
 
 ## Configure
 Regardless of whether you're doing a native or Vagrant based build, you will need to modify the `config.properties` file prior to running the installation script. At a minimum, you will need to replace the CHANGME tokens to point to the appropriate files. Read below for help on modifying this file. *If doing a Vagrant install, you can modify `config.properties` using your local text editor.*
@@ -198,8 +198,8 @@ Workspace | Username | Password | Description
 `OOS_USER` | `oos_user` | `oracle` | You can start developing on this account. It is linked to OOS_USER schema
 
 
-### APEX Web Listener
-This project uses [Node4ORDS](https://github.com/OraOpenSource/node4ords) as a web listener. The Node4ORDS project provides the ability to serve static content and will provide additional web server functionality. Please read its documentation for more information.
+### APEX Web Listener - optional 
+This project can use [Node4ORDS](https://github.com/OraOpenSource/node4ords) as a web listener. The Node4ORDS project provides the ability to serve static content and will provide additional web server functionality. Please read its documentation for more information.
 
 Node4ORDS is installed in `/opt/node4ords`. It can be controlled by:
 ```bash
