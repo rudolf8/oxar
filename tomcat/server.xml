@@ -69,9 +69,16 @@
     -->
     <Connector port="OOS_TOMCAT_SERVER_PORT"
                protocol="HTTP/1.1"
-               connectionTimeout="20000"
+               connectionTimeout="30000"
                redirectPort="8443"
-	       maxPostSize="-1" />
+	       maxPostSize="-1"     
+	       acceptorThreadCount="2"
+	       acceptCount="10"
+	       maxConnections="300"
+	       maxThreads="300"
+	       minSpareThreads="10"	      
+	       disableUploadTimeout="false"
+	       connectionUploadTimeout="300000" />
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
