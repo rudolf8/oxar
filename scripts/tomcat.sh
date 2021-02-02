@@ -19,17 +19,12 @@ if [ -n "$(command -v yum)" ]; then
 
 elif [ -n "$(command -v apt-get)" ]; then
 
-    #apt-get install tomcat7 tomcat7-admin -y
-    apt-get install tomcat8 tomcat8-admin -y
-    
+    apt-get install tomcat7 tomcat7-admin -y
+       
     # Set tomcat environmental variables such as CATALINA_HOME
-    #CATALINA_HOME=/var/lib/tomcat7
-    #TOMCAT_SERVICE_NAME=tomcat7
-    #TOMCAT_USER=tomcat7
-    
-    CATALINA_HOME=/var/lib/tomcat8
-    TOMCAT_SERVICE_NAME=tomcat8
-    TOMCAT_USER=tomcat8
+    CATALINA_HOME=/var/lib/tomcat7
+    TOMCAT_SERVICE_NAME=tomcat7
+    TOMCAT_USER=tomcat7    
     
     #Modifications to the tomcat7 init script. For consistency, naming the same
     #as Red Hat counter part (it uses a service file rather than init script).
