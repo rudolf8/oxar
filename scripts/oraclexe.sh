@@ -22,12 +22,15 @@ echo "ORACLE_PASSWORD=$OOS_ORACLE_PWD" >> /etc/sysconfig/oracle-xe-18c.conf
 #This is required since Amazon AMIs change the hostname
 cd /opt/oracle/product/18c/dbhomeXE/network/admin
 #backup files
-mv listener.ora listener.bkp
-mv tnsnames.ora tnsnames.bkp
+mv /opt/oracle/product/18c/dbhomeXE/network/admin/listener.ora listener.bkp
+mv /opt/oracle/product/18c/dbhomeXE/network/admin/tnsnames.ora tnsnames.bkp
 
 #cp new files from OOS
-cp $OOS_SOURCE_DIR/oracle/listener.ora .
-cp $OOS_SOURCE_DIR/oracle/tnsnames.ora .
+#cp $OOS_SOURCE_DIR/oracle/listener.ora .
+#cp $OOS_SOURCE_DIR/oracle/tnsnames.ora .
+
+cp $OOS_SOURCE_DIR/oracle/listener.ora /opt/oracle/product/18c/dbhomeXE/network/admin
+cp $OOS_SOURCE_DIR/oracle/tnsnames.ora /opt/oracle/product/18c/dbhomeXE/network/admin
 
 perl -i -p -e "s/1521/$OOS_ORACLE_TNS_PORT/g" listener.ora
 perl -i -p -e "s/1521/$OOS_ORACLE_TNS_PORT/g" tnsnames.ora
