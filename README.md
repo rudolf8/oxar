@@ -20,7 +20,7 @@ ORDS             | 20.4.1                  | Oracle REST Data Services
 Tomcat           | 7.0.76                  |
 Node JS          | 15.x                    |
 
-## Node.js Tools
+## Node.js Tools - optional
 App              | Version                 | Description
 ------           | ------                  | ------
 oracledb         | latest                  | [Node.js driver for Oracle](https://github.com/oracle/node-oracledb)
