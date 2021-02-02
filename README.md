@@ -269,8 +269,8 @@ Port | Service | Open | Description
 ------ | ------ | ------ | ------
 22 | SSH | Yes |
 80 | Node.js | Yes | HTTP Server
-1521 | Oracle SQL connection | Optional (default: No) |
-8080 | Tomcat | Optional (default: No) |
+1521 | Oracle SQL connection | Optional (default: Yes) |
+8080 | Tomcat | Optional (default: Yes) |
 8081 | PL/SQL Gateway | No | Disabled by default
 
 Optional ports can be configured in`config.properties` in the `FIREWALL` section. If you want to modify the firewall settings after running the build script, open `scripts/firewalld.sh` and look for examples on how to open (both temporarily and permanently).
