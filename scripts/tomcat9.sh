@@ -24,7 +24,10 @@ sh -c 'chmod +x /opt/tomcat/latest/bin/*.sh'
 TOMCAT_USER=tomcat
 TOMCAT_SERVICE_NAME=tomcat
 
-cp /usr/lib/systemd/system/${TOMCAT_SERVICE_NAME}.service /usr/lib/systemd/system/${TOMCAT_OXAR_SERVICE_NAME}.service
-sed -i 's/After=syslog.target network.target/After=syslog.target network.target oracle-xe.service/' /usr/lib/systemd/system/${TOMCAT_OXAR_SERVICE_NAME}.service
 
+cp /etc/systemd/system/tomcat.service /etc/systemd/system/${TOMCAT_OXAR_SERVICE_NAME}.service
+#cp /usr/lib/systemd/system/${TOMCAT_SERVICE_NAME}.service /usr/lib/systemd/system/${TOMCAT_OXAR_SERVICE_NAME}.service
+
+sed -i 's/After=syslog.target network.target/After=syslog.target network.target oracle-xe.service/' /etc/systemd/system/${TOMCAT_OXAR_SERVICE_NAME}.service
+#sed -i 's/After=syslog.target network.target/After=syslog.target network.target oracle-xe.service/' /usr/lib/systemd/system/${TOMCAT_OXAR_SERVICE_NAME}.service
 
