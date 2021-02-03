@@ -26,8 +26,8 @@ cd /opt/oracle/product/18c/dbhomeXE/network/admin
 #mv /opt/oracle/product/18c/dbhomeXE/network/admin/tnsnames.ora tnsnames.bkp
 
 #cp new files from OOS
-cp $OOS_SOURCE_DIR/oracle/listener.ora .
-cp $OOS_SOURCE_DIR/oracle/tnsnames.ora .
+#cp $OOS_SOURCE_DIR/oracle/listener.ora .
+#cp $OOS_SOURCE_DIR/oracle/tnsnames.ora .
 
 cp $OOS_SOURCE_DIR/oracle/listener.ora /opt/oracle/product/18c/dbhomeXE/network/admin
 cp $OOS_SOURCE_DIR/oracle/tnsnames.ora /opt/oracle/product/18c/dbhomeXE/network/admin
