@@ -36,12 +36,12 @@ elif [ -n "$(command -v apt-get)" ]; then
     sed -i 's/# Should-Start:      \$named/# Should-Start:      \$named oracle-xe/' /etc/init.d/${TOMCAT_OXAR_SERVICE_NAME}
     
     #Also replace the script executable path
-    #sed -i 's/\/etc\/init\.d\/tomcat7/\/etc\/init.d\/tomcat@oxar/' /etc/init.d/${TOMCAT_OXAR_SERVICE_NAME}
-    sed -i 's/\/etc\/init\.d\/tomcat8/\/etc\/init.d\/tomcat@oxar/' /etc/init.d/${TOMCAT_OXAR_SERVICE_NAME}
+    sed -i 's/\/etc\/init\.d\/tomcat7/\/etc\/init.d\/tomcat@oxar/' /etc/init.d/${TOMCAT_OXAR_SERVICE_NAME}
+    
     
     #and the provides name to match script name
-    #sed -i 's/Provides:          tomcat7/Provides:          tomcat@oxar/' /etc/init.d/${TOMCAT_OXAR_SERVICE_NAME}
-    sed -i 's/Provides:          tomcat8/Provides:          tomcat@oxar/' /etc/init.d/${TOMCAT_OXAR_SERVICE_NAME}
+    sed -i 's/Provides:          tomcat7/Provides:          tomcat@oxar/' /etc/init.d/${TOMCAT_OXAR_SERVICE_NAME}
+    
 else
 
     echo; echo \* No known package manager found \* >&2
