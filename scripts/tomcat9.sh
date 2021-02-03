@@ -1,5 +1,7 @@
 #!/bin/bash
 
+useradd -m -U -d /opt/tomcat -s /bin/false tomcat
+
 TOMCAT_OXAR_SERVICE_NAME=tomcat@oxar
 
 if [ -n "$(command -v yum)" ]; then
