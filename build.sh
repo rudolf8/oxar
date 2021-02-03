@@ -183,7 +183,8 @@ fi
 if [ "$OOS_MODULE_TOMCAT" = "Y" ]; then
   . ${OOS_UTILS_DIR}/echo_title.sh "Installing Tomcat"
   cd $OOS_SOURCE_DIR
-  eval "source ./scripts/tomcat.sh $OOS_LOG_OPTIONS"
+  #eval "source ./scripts/tomcat.sh $OOS_LOG_OPTIONS" -> Tomcat 7
+  eval "source ./scripts/tomcat9.sh $OOS_LOG_OPTIONS"
 fi
 
 #Firewalld
