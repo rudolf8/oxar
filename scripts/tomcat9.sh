@@ -18,4 +18,6 @@ ln -s /opt/tomcat/$OOS_TOMCAT_FILENAME /opt/tomcat/latest
 # Make tomcat dir owner
 chown -R tomcat: /opt/tomcat
 
+sh -c 'chmod +x /opt/tomcat/latest/bin/*.sh'
+
 
