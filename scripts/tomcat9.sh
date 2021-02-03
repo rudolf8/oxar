@@ -1,4 +1,5 @@
 #!/bin/bash
+# UNDER CONSTRUCTION
 
 # Create user and home directory
 useradd -m -U -d /opt/tomcat -s /bin/false tomcat
