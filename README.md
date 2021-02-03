@@ -17,7 +17,7 @@ Oracle XE        | 18.4.0.0.0              | Oracle Database Express Edition (fr
 SQLcl            | 20.4.1                  | Command line SQL
 APEX             | 20.2                    | Currently supports APEX 20.x, 19.x, 18.x, 5.x and APEX 4.x releases. Just reference the appropriate file in `config.properties`
 ORDS             | 20.4.1                  | Oracle REST Data Services
-Tomcat           | 7.0.76                  |
+Tomcat           | 9                       |
 Node JS          | 15.x                    |
 
 ## Node.js Tools - optional
@@ -88,9 +88,10 @@ vi config.properties
 Parameter | Description
 ------ | ------
 `OOS_ORACLE_FILE_URL` | [Download](http://www.oracle.com/technetwork/database/database-technologies/express-edition/overview/index.html)
-`OOS_APEX_FILE_URL` | [Download](https://www.oracle.com/tools/downloads/apex-downloads.html)
-`OOS_ORDS_FILE_URL` | [Download](http://www.oracle.com/technetwork/developer-tools/rest-data-services/overview/index.html)
-`OOS_SQLCL_FILE_URL` | [Download](https://www.oracle.com/tools/downloads/sqlcl-downloads.html) *This is an optional file*
+`OOS_APEX_FILE_URL`   | [Download](https://www.oracle.com/tools/downloads/apex-downloads.html)
+`OOS_ORDS_FILE_URL`   | [Download](http://www.oracle.com/technetwork/developer-tools/rest-data-services/overview/index.html)
+`OOS_TOMCAT_FILE_URL` | [Download](https://tomcat.apache.org/download-90.cgi)
+`OOS_SQLCL_FILE_URL`  | [Download](https://www.oracle.com/tools/downloads/sqlcl-downloads.html) *This is an optional file*
 
 
 These can be references to files on a web server or to the location on the server. Some examples:
