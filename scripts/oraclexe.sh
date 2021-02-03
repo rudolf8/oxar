@@ -22,8 +22,8 @@ echo "ORACLE_PASSWORD=$OOS_ORACLE_PWD" >> /etc/sysconfig/oracle-xe-18c.conf
 #This is required since Amazon AMIs change the hostname
 cd /opt/oracle/product/18c/dbhomeXE/network/admin
 #backup files
-mv /opt/oracle/product/18c/dbhomeXE/network/admin/listener.ora listener.bkp
-mv /opt/oracle/product/18c/dbhomeXE/network/admin/tnsnames.ora tnsnames.bkp
+#mv /opt/oracle/product/18c/dbhomeXE/network/admin/listener.ora listener.bkp
+#mv /opt/oracle/product/18c/dbhomeXE/network/admin/tnsnames.ora tnsnames.bkp
 
 #cp new files from OOS
 #cp $OOS_SOURCE_DIR/oracle/listener.ora .
