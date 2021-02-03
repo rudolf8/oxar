@@ -31,3 +31,6 @@ cp /etc/systemd/system/tomcat.service /etc/systemd/system/${TOMCAT_OXAR_SERVICE_
 sed -i 's/After=syslog.target network.target/After=syslog.target network.target oracle-xe.service/' /etc/systemd/system/${TOMCAT_OXAR_SERVICE_NAME}.service
 #sed -i 's/After=syslog.target network.target/After=syslog.target network.target oracle-xe.service/' /usr/lib/systemd/system/${TOMCAT_OXAR_SERVICE_NAME}.service
 
+#and the provides name to match script name
+sed -i 's/Provides:          tomcat9/Provides:          tomcat@oxar/' /etc/init.d/${TOMCAT_OXAR_SERVICE_NAME}
+
