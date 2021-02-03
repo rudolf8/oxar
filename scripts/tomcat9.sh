@@ -20,4 +20,11 @@ chown -R tomcat: /opt/tomcat
 
 sh -c 'chmod +x /opt/tomcat/latest/bin/*.sh'
 
+. /opt/tomcat/latest/tomcat.conf
+TOMCAT_USER=tomcat
+TOMCAT_SERVICE_NAME=tomcat
+
+cp /usr/lib/systemd/system/${TOMCAT_SERVICE_NAME}.service /usr/lib/systemd/system/${TOMCAT_OXAR_SERVICE_NAME}.service
+sed -i 's/After=syslog.target network.target/After=syslog.target network.target oracle-xe.service/' /usr/lib/systemd/system/${TOMCAT_OXAR_SERVICE_NAME}.service
+
 
