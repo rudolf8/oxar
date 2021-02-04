@@ -57,7 +57,7 @@ You can build your own VM with the following instructions.
 ```bash
 yum install git -y
 git clone https://github.com/rudolf8/oxar.git
-. oxar/install.sh
+. install.sh
 echo''
 ```
 
