@@ -1,18 +1,24 @@
 # Systemd unit file for tomcat
 [Unit]
-Description=Apache Tomcat Web Application Container
-After=syslog.target network.target
+Description=Apache Tomcat 9 Web Application Container
+After=network.target
+
 [Service]
 Type=forking
-Environment=JAVA_HOME=/usr/local/java
-Environment=CATALINA_PID=/usr/local/tomcat/temp/tomcat.pid
-Environment=CATALINA_HOME=/usr/local/tomcat
-Environment=CATALINA_BASE=/usr/local/tomcat
-Environment='CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC'
-Environment='JAVA_OPTS=-Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom'
-ExecStart=/usr/local/tomcat/bin/startup.sh
-ExecStop=/bin/kill -15 $MAINPID
+
 User=tomcat
 Group=tomcat
+
+Environment=JAVA_HOME=/usr
+Environment='JAVA_OPTS=-Djava.security.egd=file:///dev/urandom'
+
+Environment=CATALINA_BASE=/usr/local/tomcat
+Environment=CATALINA_HOME=/usr/local/tomcat
+Environment=CATALINA_PID=/usr/local/tomcat/temp/tomcat.pid
+Environment='CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC'
+
+ExecStart=/usr/local/tomcat/bin/startup.sh
+ExecStop=/usr/local/tomcat/bin/shutdown.sh
+
 [Install]
 WantedBy=multi-user.target
