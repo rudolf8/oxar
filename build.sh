@@ -165,19 +165,19 @@ if [ "$OOS_DEBUG" = true ]; then
 fi
 
 #12: Install Oracle Node driver
-if [ "$OOS_MODULE_NODE_ORACLEDB" = "Y" ]; then
-  . ${OOS_UTILS_DIR}/echo_title.sh "Installing node-oracledb"
-  cd $OOS_SOURCE_DIR
-  eval "source ./scripts/node-oracledb.sh $OOS_LOG_OPTIONS"
-fi
+#if [ "$OOS_MODULE_NODE_ORACLEDB" = "Y" ]; then
+#  . ${OOS_UTILS_DIR}/echo_title.sh "Installing node-oracledb"
+#  cd $OOS_SOURCE_DIR
+#  eval "source ./scripts/node-oracledb.sh $OOS_LOG_OPTIONS"
+#fi
 
 
 #Node4ORDS
-if [ "$OOS_MODULE_NODE4ORDS" = "Y" ]; then
-  . ${OOS_UTILS_DIR}/echo_title.sh "Installing Node4ORDS"
-  cd $OOS_SOURCE_DIR
-  eval "source ./scripts/node4ords.sh $OOS_LOG_OPTIONS"
-fi
+#if [ "$OOS_MODULE_NODE4ORDS" = "Y" ]; then
+#  . ${OOS_UTILS_DIR}/echo_title.sh "Installing Node4ORDS"
+#  cd $OOS_SOURCE_DIR
+#  eval "source ./scripts/node4ords.sh $OOS_LOG_OPTIONS"
+#fi
 
 #Tomcat
 if [ "$OOS_MODULE_TOMCAT" = "Y" ]; then
