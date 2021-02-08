@@ -43,8 +43,8 @@ TOMCAT_SERVICE_NAME=tomcat
 #Reload systemd just in case anything is cached with this service name
 systemctl daemon-reload
 #Stop and dissable tomcat from sytem startup
-systemctl stop ${TOMCAT_SERVICE_NAME}
-systemctl disable ${TOMCAT_SERVICE_NAME}
+#systemctl stop ${TOMCAT_SERVICE_NAME}
+#systemctl disable ${TOMCAT_SERVICE_NAME}
 
 #Add a user into tomcat-users.xml (/etc/tomcat/tomcat-user.xml) as defined in config.properties
 perl -i -p -e "s/<tomcat-users>/<tomcat-users>\n  <\!-- Auto generated content by http\:\/\/www.github.com\/OraOpenSource\/oraclexe-apex install scripts -->\n  <role rolename=\"manager-gui\"\/>\n  <user username=\"${OOS_TOMCAT_USERNAME}\" password=\"${OOS_TOMCAT_PASSWORD}\" roles=\"manager-gui\"\/>\n  <\!-- End auto-generated content -->/g" ${CATALINA_HOME}/conf/tomcat-users.xml
