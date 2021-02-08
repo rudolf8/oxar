@@ -4,17 +4,22 @@ TOMCAT_OXAR_SERVICE_NAME=tomcat@oxar
 
 if [ -n "$(command -v yum)" ]; then
     yum install tomcat tomcat-admin-webapps -y
+# Set tomcat environmental variables such as CATALINA_HOME
+#. /etc/tomcat/tomcat.conf
 
-    # Set tomcat environmental variables such as CATALINA_HOME
-    . /etc/tomcat/tomcat.conf
-    TOMCAT_USER=tomcat
-    TOMCAT_SERVICE_NAME=tomcat
+
+JAVA_HOME=/bin
+CATALINA_PID=/usr/local/tomcat/temp/tomcat.pid
+CATALINA_HOME=/usr/local/tomcat
+CATALINA_BASE=/usr/local/tomcat
+TOMCAT_USER=tomcat
+TOMCAT_SERVICE_NAME=tomcat
     
-    #Modifications to tomcat service file. Recommendation is to make a copy of the `@`
-    #version. So making a copy and naming it oxar. 
-    #Add `oracle-xe` to the After clause to encourage waiting for the db to be up and running
-    cp /usr/lib/systemd/system/${TOMCAT_SERVICE_NAME}.service /usr/lib/systemd/system/${TOMCAT_OXAR_SERVICE_NAME}.service
-    sed -i 's/After=syslog.target network.target/After=syslog.target network.target oracle-xe.service/' /usr/lib/systemd/system/${TOMCAT_OXAR_SERVICE_NAME}.service
+#Modifications to tomcat service file. Recommendation is to make a copy of the `@`
+#version. So making a copy and naming it oxar. 
+#Add `oracle-xe` to the After clause to encourage waiting for the db to be up and running
+cp /usr/lib/systemd/system/${TOMCAT_SERVICE_NAME}.service /usr/lib/systemd/system/${TOMCAT_OXAR_SERVICE_NAME}.service
+sed -i 's/After=syslog.target network.target/After=syslog.target network.target oracle-xe.service/' /usr/lib/systemd/system/${TOMCAT_OXAR_SERVICE_NAME}.service
     
 
 elif [ -n "$(command -v apt-get)" ]; then
