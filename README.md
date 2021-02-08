@@ -18,14 +18,6 @@ SQLcl            | 20.4.1                  | Command line SQL
 APEX             | 20.2                    | Currently supports APEX 20.x, 19.x, 18.x, 5.x and APEX 4.x releases. Just reference the appropriate file in `config.properties`
 ORDS             | 20.4.1                  | Oracle REST Data Services
 Tomcat           | 9                       |
-Node JS          | 15.x                    |
-
-## Node.js Tools - optional
-App              | Version                 | Description
-------           | ------                  | ------
-oracledb         | latest                  | [Node.js driver for Oracle](https://github.com/oracle/node-oracledb)
-[pm2](https://github.com/Unitech/pm2) | latest | Process manager for Node.js apps
-
 
 # Supported OS's
 This script currently works on the following Linux distributions
