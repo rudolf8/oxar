@@ -164,6 +164,13 @@ if [ "$OOS_DEBUG" = true ]; then
   read -rsp $'APEX installed. Press enter to continue...\n'
 fi
 
+# Nginx 
+if [ "$OOS_MODULE_NGINX" = "Y" ]; then
+  . ${OOS_UTILS_DIR}/echo_title.sh "Installing Nginx"
+  cd $OOS_SOURCE_DIR  
+  eval "source ./scripts/nginx.sh $OOS_LOG_OPTIONS"
+fi
+
 #12: Install Oracle Node driver
 #if [ "$OOS_MODULE_NODE_ORACLEDB" = "Y" ]; then
 #  . ${OOS_UTILS_DIR}/echo_title.sh "Installing node-oracledb"
