@@ -26,6 +26,8 @@ cd /etc/ssl/private
 openssl req -newkey rsa:2048 -nodes -keyout /etc/ssl/private/nginx-selfsigned.key \
   -x509 -days 365 -out /etc/ssl/certs/nginx-selfsigned.crt \
   -subj "/C=DE/ST=Bavaria/L=Munich/O=Dis/CN=localhost"
+  
+openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048  
 
 # Modify Node4ORDS Config
 cd /opt/node4ords
